@@ -17,7 +17,7 @@
       ipcRenderer.on("payload", function (event, payloadStr) {
         var payload = JSON.parse(payloadStr);
         var message = document.getElementById("messages");
-        message.innerHTML = message;
+        message.innerHTML = payload.message;
 
         var titleH2 = document.getElementById("title");
         titleH2.innerHTML = payload.title;
