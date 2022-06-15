@@ -9,9 +9,9 @@
     "app:dist": "electron-builder"
   },
   "build": {
-    "appId": "com.example.electron-auto-update-demo",
+    "appId": "com.github.willlaiwk.electron-auto-update-demo",
     "mac": {
-      "category": "electron-auto-update-demo"
+      "category": "public.app-category.developer-tools"
     }
   },
   "repository": "https://github.com/willlaiwk/electron-auto-update-demo",
