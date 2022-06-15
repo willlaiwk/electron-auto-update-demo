@@ -59,6 +59,8 @@ class UpdateWindow {
   createWindow() {
     this.win = new BrowserWindow({
       webPreferences: {
+        width: 500,
+        height: 400,
         nodeIntegration: true,
         contextIsolation: false,
       },
