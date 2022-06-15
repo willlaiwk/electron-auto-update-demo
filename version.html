@@ -16,10 +16,8 @@
       const { ipcRenderer } = require("electron");
       ipcRenderer.on("payload", function (event, payloadStr) {
         var payload = JSON.parse(payloadStr);
-        var container = document.getElementById("messages");
-        var message = document.createElement("div");
-        message.innerHTML = payload.message;
-        container.appendChild(message);
+        var message = document.getElementById("messages");
+        message.innerHTML = message;
 
         var titleH2 = document.getElementById("title");
         titleH2.innerHTML = payload.title;
